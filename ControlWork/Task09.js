@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 function multiplicationTable(n) {
     if (n < 1 || !Number.isInteger(n)) {
         console.log("Ошибка: введите целое число больше 0.");
@@ -33,7 +35,6 @@ function multiplicationTable(n) {
     console.log("Сумма столбцов: " + colSums.join(" "));
     console.log("Сумма всех значений в таблице: " + totalSum);
 }
-
 
 const userInput = prompt("Введите целое число больше 0:");
 const n = parseInt(userInput);
